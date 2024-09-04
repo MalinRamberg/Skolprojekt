@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juriststudentens Tävling</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Juriststudentens Tävling 2024</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Hem</a></li>
+                <li><a href="#about">Om Tävlingen</a></li>
+                <li><a href="#register">Anmälan</a></li>
+                <li><a href="#news">Nyheter</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Välkommen till Juriststudentens Tävling 2024</h2>
+            <p>Den årliga tävlingen för framtidens jurister! Delta och visa din kunskap.</p>
+        </section>
+
+        <section id="about">
+            <h2>Om Tävlingen</h2>
+            <p>Tävlingen är öppen för alla juriststudenter i Sverige. Syftet är att ge studenterna möjlighet att utmana sina juridiska kunskaper och färdigheter i en tävlingsmiljö. Tävlingen består av flera moment inklusive rättsutredningar, muntliga framträdanden och diskussioner.</p>
+        </section>
+
+        <section id="register">
+            <h2>Anmälan</h2>
+            <form id="registrationForm">
+                <label for="name">Namn:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">E-post:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="university">Universitet:</label>
+                <input type="text" id="university" name="university" required>
+
+                <label for="year">Årskurs:</label>
+                <select id="year" name="year" required>
+                    <option value="1">År 1</option>
+                    <option value="2">År 2</option>
+                    <option value="3">År 3</option>
+                    <option value="4">År 4</option>
+                    <option value="5">År 5</option>
+                </select>
+
+                <button type="submit">Anmäl dig</button>
+            </form>
+        </section>
+
+        <section id="news">
+            <h2>Senaste Nytt</h2>
+            <ul id="newsList">
+                <li>18 September 2024: Anmälan har öppnat!</li>
+                <li>25 September 2024: Det första momentet släpps.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Juriststudentens Tävling. Alla rättigheter förbehållna.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
