@@ -3,70 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Graphic Designer CV</title>
+    <title>Online Gallery</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>Jane Doe</h1>
-            <h2>Graphic Designer</h2>
-        </div>
+        <h1>Online Gallery</h1>
+        <p>Upload your images and share feedback!</p>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <section id="about" class="section">
-        <h3>About Me</h3>
-        <p>Hi! I'm Jane Doe, a creative graphic designer with 5+ years of experience in branding, web design, and visual storytelling. Passionate about delivering engaging and functional designs.</p>
-    </section>
-
-    <section id="skills" class="section">
-        <h3>Skills</h3>
-        <ul>
-            <li>Adobe Photoshop</li>
-            <li>Adobe Illustrator</li>
-            <li>InDesign</li>
-            <li>Web Design</li>
-            <li>Brand Identity</li>
-        </ul>
-    </section>
-
-    <section id="portfolio" class="section">
-        <h3>Portfolio</h3>
-        <div class="portfolio-grid">
-            <div class="portfolio-item">Project 1</div>
-            <div class="portfolio-item">Project 2</div>
-            <div class="portfolio-item">Project 3</div>
-        </div>
-    </section>
-
-    <section id="contact" class="section">
-        <h3>Contact Me</h3>
-        <form id="contactForm">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="message">Message</label>
-            <textarea id="message" name="message" required></textarea>
-            
-            <button type="submit">Send</button>
+    <section id="upload-section">
+        <h2>Upload an Image</h2>
+        <form id="uploadForm">
+            <label for="imageUpload">Select image:</label>
+            <input type="file" id="imageUpload" accept="image/*" required>
+            <button type="submit">Upload Image</button>
         </form>
     </section>
 
-    <footer>
-        <p>&copy; 2024 Jane Doe | All Rights Reserved</p>
-    </footer>
+    <section id="gallery-section">
+        <h2>Gallery</h2>
+        <div id="gallery"></div>
+    </section>
 
     <script src="script.js"></script>
 </body>
