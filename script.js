@@ -1,15 +1,15 @@
-document.getElementById("registrationForm").addEventListener("submit", function(event) {
-    event.preventDefault(); // Förhindrar att formuläret skickas
+document.getElementById("contactForm").addEventListener("submit", function(event){
+    event.preventDefault();
+    
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const message = document.getElementById("message").value;
 
-    let name = document.getElementById("name").value;
-    let email = document.getElementById("email").value;
-    let university = document.getElementById("university").value;
-    let year = document.getElementById("year").value;
-
-    if (name && email && university && year) {
-        alert("Tack för din anmälan, " + name + " från " + university + "!");
-        document.getElementById("registrationForm").reset(); // Återställer formuläret
+    if(name && email && message) {
+        alert("Thank you, " + name + "! Your message has been sent.");
+        // Form reset after submission
+        document.getElementById("contactForm").reset();
     } else {
-        alert("Vänligen fyll i alla fält.");
+        alert("Please fill in all fields.");
     }
 });
